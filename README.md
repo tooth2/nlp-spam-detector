@@ -11,19 +11,12 @@ Being able to identify spam messages is a binary classification problem as messa
 In this mission we will be using the Naive Bayes algorithm to create a model that can classify dataset SMS messages as spam or not spam, based on the training we give to the model. It is important to have some level of intuition as to what a spammy text message might look likeBeing able to identify spam messages is a binary classification problem as messages are classified as either 'Spam' or 'Not Spam' and nothing else. Also, this is a supervised learning problem, as we know what are trying to predict. We will be feeding a labelled dataset into the model, that it can learn from, to make future predictions.
 
 This project has been broken down into the following steps:
-- Introduction to the Naive Bayes Theorem
-- Understanding our dataset
-- Data Preprocessing
-- Bag of Words(BoW)
-- Implementing BoW from scratch
-- Implementing Bag of Words in scikit-learn
-- Training and testing sets
-- Applying Bag of Words processing to our dataset.
-- Bayes Theorem implementation from scratch
-- Naive Bayes implementation from scratch
-- Naive Bayes implementation using scikit-learn
-- Evaluating our model
-- Conclusion
+1. Data Preprocessing
+2. Training and testing sets
+3. Applying Bag of Words(BoW) processing to the dataset
+4. Bayes Theorem , Naive Bayes implementation from scratch
+5. Naive Bayes implementation using scikit-learn
+6. Evaluating the model
 
 ### Bayes Theorem 
 Bayes Theorem is one of the earliest probabilistic inference algorithms. It was developed by Reverend Bayes (which he used to try and infer the existence of God no less), and still performs extremely well for certain use cases. In layman's terms, the Bayes theorem calculates the probability of an event occurring, based on certain other probabilities that are related to the event in question. It is composed of "prior probabilities" - or just "priors." These "priors" are the probabilities that we are aware of, or that are given to us. And Bayes theorem is also composed of the "posterior probabilities," or just "posteriors," which are the probabilities we are looking to compute using the "priors"
@@ -67,8 +60,6 @@ One of the major advantages that Naive Bayes has over other classification algor
  > True Positives/(True Positives + False Positives)
 - Recall (sensitivity): measures what proportion of messages that actually were spam were classified by us as spam. It is a ratio of true positives (words classified as spam, and which actually are spam) to all the words that were actually spam. 
 > True Positives/(True Positives + False Negatives)
-
-
 
 ### Reference 
 - [SMSSPAM Dataset](https://archive.ics.uci.edu/ml/machine-learning-databases/00228/smsspamcollection.zip)
