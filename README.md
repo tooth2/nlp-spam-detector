@@ -44,8 +44,7 @@ Here as we can see, the documents are numbered in the rows, and each word is a c
 - tokenizes the string (separates the string into individual words) and gives an integer ID to each token
 - counts frequencies : the occurrence of each of those tokens
 - ```from sklearn.feature_extraction.text import CountVectorizer```
-
-![CountVectorizer](images/countvectorizer.png)
+<img src ="images/countvectorizer.png" width="800" />
 
 ### Training/Testing Dataset
 - X_train : training data for the 'sms_message' column
